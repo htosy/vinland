@@ -18,7 +18,7 @@ rbGroup.addButton(rb_ans2)
 rbGroup.addButton(rb_ans3)
 rbGroup.addButton(rb_ans4)
 
-lb_question = QLabel("Запитання")
+lb_question_m = QLabel("Запитання")
 lb_rest = QLabel("хвилин")
 lb_rightAns = QLabel("відповідь")
 lb_result = QLabel("Вірно!")
@@ -55,7 +55,7 @@ h1_main.addWidget(btn_rest)
 h1_main.addWidget(sp_rest)
 h1_main.addWidget(lb_rest)
 
-h2_main.addWidget(lb_question, alignment=(Qt.AlignHCenter | Qt.AlignVCenter))
+h2_main.addWidget(lb_question_m, alignment=(Qt.AlignHCenter | Qt.AlignVCenter))
 
 h3_main.addWidget(gbAns)
 h3_main.addWidget(gb_result)
@@ -70,6 +70,7 @@ v1_main.addLayout(h2_main, stretch= 2)
 v1_main.addLayout(h3_main, stretch= 8)
 v1_main.addLayout(h4_main)
 v1_main.setSpacing(5)
+
 
 window.setLayout(v1_main)
 window.resize(550,450)
